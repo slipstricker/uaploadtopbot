@@ -7,7 +7,6 @@ async def start_fn(client, message):
         name = message.from_user.first_name
         msg = f"Hey {name}!\n"
         msg += "I am a leecher bot..\n"
-        msg += "If you want to use me you have to join <a href='https://t.me/torrentleechgs'>TorrentLeech</a>!"
         msg += "\n\nThank You😊"
         await message.reply_text(
             msg,
@@ -16,7 +15,7 @@ async def start_fn(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('TorrentLeech', url='https://t.me/torrentleechgs')
+                        InlineKeyboardButton('Canal Oficial @BoxMidia', url='https://t.me/boxmidia')
                     ]
                 ]
             )
